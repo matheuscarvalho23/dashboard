@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosyle Test</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <!-- START CONTAINER -->
+  <div class="container">
+    <!-- START HEADER -->
+    <header class="header">
+      <a href="#" class="logo">
+        <h2>FRONTEND PROJECT</h2>
+      </a>
+      <div class="toolbar">
+        <p></p>
+        <p>Hello, <strong>Matheus Carvalho</strong> <i class="far fa-user"></i></p>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START MENU -->
+    <nav class="navbar">
+      <ul class="menu">
+        <li class="menu-item"><a href="#" class="menu-link">Dashboard</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Users</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Projects</a></li>
+        <li class="menu-item"><a href="#" class="menu-link"><p class="selected">Events</p></a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Preferences</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Feedback</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Suggestions</a></li>
+      </ul>
+    </nav>
+    <!-- END MENU -->
+
+    <!-- START CONTENT -->
+    <main class="content">
+      <h2>New Event</h2>
+      <div class="new-event">
+        <div class="card">
+          <div class="form">
+            <form action="" method="post">
+              <input type="text" name="title" id="title" placeholder="Title">
+
+              <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
+
+              <input type="text" name="place" id="place" placeholder="Place">
+
+              <select name="duration" id="duration">
+                <option value="0">-- Duration</option>
+                <option value="1">All day</option>
+                <option value="2">Request time</option>
+              </select>
+
+              <div class="time" id="time">
+                <input type="time" name="start-time" id="start-time">
+                to
+                <input type="time" name="end-time" id="end-time">
+              </div>
+
+              <button type="submit">Save</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- END CONTENT -->
+
+  </div>
+  <!-- END CONTAINER -->
+</body>
+</html>
