@@ -206,6 +206,14 @@ form button {
   color: #fff;
 }
 
+.open-menu {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
 @media screen and (min-width: 48em) {
   .container {
     --column-count: 4;
@@ -228,12 +236,32 @@ form button {
   }
 }
 
-@media (max-width: 600px) {
-  .container .navbar {
-   display: none;
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 0fr;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .open-menu {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    font-size: 25px;
+    cursor: pointer;
   }
 
   .menu {
     display: none;
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    margin-right: 20px;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.16);
   }
 }

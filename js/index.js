@@ -10,4 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
       time.style.display = 'none';
     }
   }
+
+  document.getElementById("open-menu").onclick = function () {
+    var menu = document.getElementById("menu");
+    menu.style.display = 'block';
+  }
+
 });
